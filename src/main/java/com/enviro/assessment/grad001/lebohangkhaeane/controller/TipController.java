@@ -3,12 +3,14 @@ package com.enviro.assessment.grad001.lebohangkhaeane.controller;
 import com.enviro.assessment.grad001.lebohangkhaeane.entity.Tip;
 import com.enviro.assessment.grad001.lebohangkhaeane.service.TipService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/recyclingTips")
+@Validated
 public class TipController {
 
     final private TipService tipService;
