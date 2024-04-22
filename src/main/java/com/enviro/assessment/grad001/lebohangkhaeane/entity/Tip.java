@@ -20,7 +20,7 @@ public class Tip {
     private Long id;
 
     @NotNull(message = "Category ID cannot be null")
-    private String categoryId;
+    private Long categoryId;
 
     @NotBlank(message = "Content cannot be blank")
     @Size(min = 10, max = 500, message = "Content must be between 10 and 500 characters")
